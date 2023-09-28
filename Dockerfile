@@ -1,2 +1,3 @@
 FROM python:3.11.4-alpine3.17
-RUN cat $2
+COPY entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
