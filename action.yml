@@ -1,0 +1,19 @@
+# action.yml
+name: 'Confluent Kafka SA Opertaor'
+description: 'Kafka SaaS SA management'
+inputs:
+  CONFIG:
+    description: 'location of the configurations'
+    required: true
+  SA_MANIFEST:
+    description: 'the location of the service account manifest'
+    required: true
+outputs:
+   state: # The current state in the cluster
+    description: 'The current generated state in the cluster'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.CONFIG }}
+    - ${{ inputs.SA_MANIFEST }}

@@ -1,0 +1,43 @@
+### python ###
+*__pycache__*
+### Virtual Environmnet ###
+venv
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+.idea
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+local
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+.vscode
+.pytest_cache
+.coverage
+.htmlcov
+coverage.xml
+samp.py
+pytest-report.xml
