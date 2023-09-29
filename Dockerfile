@@ -1,3 +1,3 @@
-FROM python:3.11.4-alpine3.17
+FROM containers.cisco.com/intps/kafka-saas-sa-operator:v1
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
